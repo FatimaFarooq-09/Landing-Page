@@ -1,0 +1,176 @@
+body {
+    background-image: linear-gradient(to right, #ffffff 0%, #cc66ff 180%);
+    font-family: "Kanit", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* start of header */
+.logo {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.logo img {
+    width: 100px;
+    margin: 0px 10px;
+}
+
+.nav {
+    margin: 18px auto;
+    width: 55%;
+    display: block;
+}
+
+.navbar {
+    margin: 10px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    margin: 15px 10px;
+    padding: 3px 3px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    top: 25px;
+}
+
+.contactus {
+    margin: 5px;
+    width: 150px;
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    background-color: transparent;
+    border-image: linear-gradient(to left, #cc33ff 0%, #3333ff 100%);
+    border-image-slice: 1;
+}
+
+.contactus:hover {
+    transform: scale(1.1); 
+}
+
+/* start of home page */
+.container {
+    line-height: normal;
+    margin-top: 100px;
+    margin-left: 80px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.headinga,
+.headingb,
+.text {
+    position: relative;
+    opacity: 0;
+    animation: fadeInText 2s 0.5s forwards;
+}
+
+.headinga {
+    font-size: 40px;
+    margin-bottom: 20px;
+    /* width: 400px; */
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #320b64;
+}
+
+.headingb {
+    font-size: 40px;
+    margin-bottom: 20px;
+    /* width: 400px; */
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #bc29ec;
+}
+
+.text {
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 500px;
+    text-transform: capitalize;
+}
+
+#startbutton {
+    margin: 5px;
+    width: 150px;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    background-image: linear-gradient(to left, #cc33ff 0%, #3333ff 100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#startbutton:hover {
+    transform: scale(1.1);
+}
+
+.bg-img {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 35px;
+    margin: 100px 10px;
+    opacity: 0;
+    animation: slideIn 3s 1s forwards;
+}
+
+.bg-img img {
+    width: 1000px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* end of home page */
